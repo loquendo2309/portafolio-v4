@@ -9,6 +9,14 @@ body{
     line-height: 1.6;
     background: #f5f5f5;
 }
+
+body.modo-oscuro{
+    background: #121212;
+    color: #e0e0e0;
+}
+body.modo-oscuro header{
+    background: #1f1f1f;
+}
 /*selector de TIPO aplicar estilo al encabezado*/
 header{
     background: #333;
@@ -96,4 +104,6 @@ nav ul li a{
         color: #90caf9;
     }
 }
+
+
 
