@@ -137,7 +137,7 @@ async function cargarProyectos() {
     try {
         const response = await fetch("https://api.github.com/users/loquendo2309/repos");
         if (!response.ok) {
-            throw new Error("Error al cargar los proyectos");
+            throw new Error("Error al cargar los proyectos   ");
         }
         const proyectos = await response.json();
         const contenedorProyectos = document.getElementById("contenedor-proyectos");
@@ -191,11 +191,12 @@ if (temaGuardado) {
 // delegacion  de  eventos: un solo listener para todo el contenedor de proyectos
 const contenedor = document.getElementById("contenedor-proyectos");
 
+//prueba de git 
 contenedor.addEventListener("click", function(evento){
  // .target el elemento que fue clikeado .closest busca el padre mas cercano que coincida con el selector dado
     const tarjeta = evento.target.closest(".proyecto-card");
     if(tarjeta){
-        alert ("Haz hecho clic en un proyecto: " + tarjeta.querySelector("h3").innerText);
+        alert ("Haz hecho clic en un proyecto:   " + tarjeta.querySelector("h3").innerText);
     }
 
 });
